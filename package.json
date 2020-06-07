@@ -1,0 +1,30 @@
+{
+  "name": "postcss-mui-theme",
+  "version": "0.0.0",
+  "description": "Adds a theme() function to get attributes of the material-ui theme.",
+  "main": "index.js",
+  "scripts": {
+    "prepublishOnly": "npm version patch -m 'Publish Release %s'",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technobuddha/postcss-mui-theme.git"
+  },
+  "keywords": [
+    "postcss",
+    "material-ui",
+    "theme"
+  ],
+  "author": "Phil Hill <phil@technobuddha.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/technobuddha/postcss-mui-theme/issues"
+  },
+  "homepage": "https://github.com/technobuddha/postcss-mui-theme#readme",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "postcss": "^7.0.32",
+    "reduce-function-call": "^1.0.3"
+  }
+}
