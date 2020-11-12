@@ -23,8 +23,8 @@
   },
   "homepage": "https://github.com/technobuddha/postcss-mui-theme#readme",
   "dependencies": {
-    "lodash": "^4.17.15",
-    "postcss": "^7.0.32",
+    "lodash": "^4.17.20",
+    "postcss": "^8.1.7",
     "reduce-function-call": "^1.0.3"
   }
 }
