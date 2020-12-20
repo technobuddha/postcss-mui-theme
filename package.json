@@ -1,6 +1,6 @@
 {
   "name": "postcss-mui-theme",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Adds a theme() function to get attributes of the material-ui theme.",
   "main": "index.js",
   "scripts": {
