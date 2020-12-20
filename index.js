@@ -3,7 +3,7 @@ const reduceFunctionCall    = require('reduce-function-call');
 const get                   = require('lodash/get')
 
 module.exports = (opts = {}) => {
-    checkOpts(opts);
+    //checkOpts(opts);
     const theme = opts.theme || {};
     
     return {
