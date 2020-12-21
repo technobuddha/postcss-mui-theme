@@ -1,15 +1,16 @@
-const postcss               = require('postcss');
+const { checkOpts }         = require('postcss');
 const reduceFunctionCall    = require('reduce-function-call');
 const get                   = require('lodash/get')
 
-module.exports = postcss.plugin(
-    'postcss-mui-theme',
-    opts => {
-        opts        = opts || {};
-        const theme = opts.theme || {};
+module.exports = (opts = {}) => {
+    checkOpts(opts);
 
-        return css => {
-            css.walkDecls(
+    const theme = opts.theme || {};
+
+    return {
+        postcssPlugin: 'postcss-mui-theme',
+        Once (root, { result }) {
+            root.walkDecls(
                 decl => {
                     if(decl.value) {
                         if(decl.value.indexOf('mui-theme(') !== -1) {
@@ -30,4 +31,6 @@ module.exports = postcss.plugin(
             );
         }
     }
-);
+}
+
+module.exports.postcss = true;
