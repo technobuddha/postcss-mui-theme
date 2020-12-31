@@ -4,8 +4,11 @@
   "description": "Adds a theme() function to get attributes of the material-ui theme.",
   "main": "index.js",
   "scripts": {
-    "prepublishOnly": "npm version patch -m 'Publish Release %s'",
-    "postversion": "git push && git push --tags"
+    "pub": "npm-run-all pub:version pub:publish",
+    "pub:version": "npm --no-tag-git-version version prerelease",
+    "pub:publish": "npm publish",
+    "x-prepublishOnly": "npm version patch -m 'Publish Release %s'",
+    "x-postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
