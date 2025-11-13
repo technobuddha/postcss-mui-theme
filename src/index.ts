@@ -1,1 +1,1 @@
-export { default, plugin } from './plugin.ts';
+export { default, type Options, plugin } from './plugin.ts';

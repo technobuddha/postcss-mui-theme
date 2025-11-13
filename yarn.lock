@@ -2327,7 +2327,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jsdom@npm:^27":
+"@types/jsdom@npm:^27.0.0":
   version: 27.0.0
   resolution: "@types/jsdom@npm:27.0.0"
   dependencies:
@@ -2407,7 +2407,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19":
+"@types/react-dom@npm:^19.2.3":
   version: 19.2.3
   resolution: "@types/react-dom@npm:19.2.3"
   peerDependencies:
@@ -7207,9 +7207,9 @@ __metadata:
     "@technobuddha/builder": "npm:0.99.26"
     "@technobuddha/library": "npm:2.0.105"
     "@technobuddha/project": "npm:0.99.157"
-    "@types/jsdom": "npm:^27"
+    "@types/jsdom": "npm:^27.0.0"
     "@types/react": "npm:19.2.4"
-    "@types/react-dom": "npm:^19"
+    "@types/react-dom": "npm:^19.2.3"
     "@vitest/coverage-v8": "npm:4.0.8"
     jest-extended: "npm:7.0.0"
     jest-matcher-deep-close-to: "npm:3.0.2"

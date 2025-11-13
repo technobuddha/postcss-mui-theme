@@ -13,7 +13,7 @@ const config = {
   excludePrivate: true,
   excludeProtected: true,
   gitRevision: 'main',
-  readme: 'doc/intro.md',
+  readme: 'none',
   //  Output
   basePath: '.',
   //  Organization
