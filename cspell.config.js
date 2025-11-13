@@ -1,10 +1,13 @@
 // 🚨
 // 🚨 CHANGES TO THIS FILE WILL BE OVERRIDDEN
 // 🚨
+// @ts-check
+/** @type import("cspell").CSpellSettings */
+const config =
 {
   "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/packages/cspell-types/cspell.schema.json",
   "version": "0.2",
-  "ignorePaths": ["**/*.svg", "./locales/**/*.*", "./dist/**/*.*", "**/*.tsbuildinfo"],
+  "ignorePaths": ["**/*.svg", "./locales/**/*.*", "./dist/**/*.*", "**/*.tsbuildinfo", "**/*.test.*"],
   "dictionaryDefinitions": [
     {
       "name": "internal",
@@ -25,18 +28,6 @@
       "addWords": true
     },
     {
-      "name": "more-npm",
-      "path": "./.cspell/npm.dic",
-      "description": "Additional npm package names",
-      "addWords": true
-    },
-    {
-      "name": "more-fonts",
-      "path": "./.cspell/fonts.dic",
-      "description": "Additional font package names",
-      "addWords": true
-    },
-    {
       "name": "more-db",
       "path": "./.cspell/db.dic",
       "description": "Additional database keywords",
@@ -49,9 +40,45 @@
       "addWords": true
     },
     {
+      "name": "more-fonts",
+      "path": "./.cspell/fonts.dic",
+      "description": "Additional font package names",
+      "addWords": true
+    },
+    {
+      "name": "more-html",
+      "path": "./.cspell/html.dic",
+      "description": "HTML words",
+      "addWords": true,
+    },
+    {
+      "name": "more-math",
+      "path": "./.cspell/math.dic",
+      "description": "Math terms",
+      "addWords": true,
+    },
+    {
+      "name": "more-npm",
+      "path": "./.cspell/npm.dic",
+      "description": "Additional npm package names",
+      "addWords": true
+    },
+    {
+      "name": "more-numbers",
+      "path": "./.cspell/numbers.dic",
+      "description": "Math terms",
+      "addWords": true,
+    },
+    {
       "name": "more-programming",
       "path": "./.cspell/programming.dic",
       "description": "Additional programming keywords",
+      "addWords": true
+    },
+    {
+      "name": "more-proper",
+      "path": "./.cspell/programming.dic",
+      "description": "Additional Proper nouns",
       "addWords": true
     },
     {
@@ -60,18 +87,31 @@
       "description": "Technobuddha specific words",
       "addWords": true
     },
+    {
+      "name": "unicode",
+      "path": "./.cspell/unicode.dic",
+      "description": "Unicode names",
+      "addWords": true
+    },
   ],
   "dictionaries": [
     "internal",
-    "technobuddha",
     "more-css",
     "more-color",
     "more-db",
     "more-english",
     "more-fonts",
+    "more-html",
+    "more-math",
     "more-npm",
-    "more-programming"
+    "more-numbers",
+    "more-programming",
+    "more-proper",
+    "technobuddha",
+    "unicode",
   ],
   "ignoreWords": [],
   "import": []
 }
+
+export default config;

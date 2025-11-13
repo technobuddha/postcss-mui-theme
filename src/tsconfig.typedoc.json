@@ -3,15 +3,14 @@
 // 🚨
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "./tsconfig.base.json",
+  "extends": "../tsconfig.base.json",
   "compilerOptions": {
     "composite": true,
     "types": ["node"],
-    "lib": ["esnext"],
-    "allowJs": true,
-    "checkJs": true,
+    "lib": ["esnext", "dom"],
     "noEmit": true
   },
-  "include": ["*.config.js", "*.config.ts", "*.setup.ts"],
-  "exclude": []
+  "include": ["**/*.ts", "**/*.d.ts"],
+  "exclude": ["**/__tests__/**/*.*"],
+  "references": []
 }

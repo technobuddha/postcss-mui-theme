@@ -15,29 +15,45 @@
     "url": "https://github.com/technobuddha/postcss-mui-theme/issues"
   },
   "homepage": "https://github.com/technobuddha/postcss-mui-theme#readme",
-  "packageManager": "yarn@4.6.0",
-  "devDependencies": {
-    "@mui/material": "6.4.5",
-    "@technobuddha/project": "0.99.1",
-    "@types/lodash": "^4",
-    "@types/lodash-es": "4.17.12",
-    "lodash-es": "4.17.21",
-    "postcss": "8.5.3",
-    "typedoc": "0.28.12"
-  },
-  "technobuddhaProject": {
-    "version": "0.99.1",
-    "created": "2025-02-19T12:50:14.916Z",
-    "updated": "2025-09-04T20:27:26.382Z"
-  },
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "packageManager": "yarn@4.6.0",
   "engines": {
     "node": ">=24.0.0"
   },
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "scripts": {
+    "dev": "build dev",
+    "build": "build prod",
+    "lint": "npx eslint src",
+    "test": "vitest run"
+  },
   "dependencies": {
-    "lodash": "4.17.21",
+    "@technobuddha/library": "2.0.105",
     "reduce-function-call": "1.0.3"
+  },
+  "devDependencies": {
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.1",
+    "@mui/material": "6.5.0",
+    "@technobuddha/builder": "0.99.26",
+    "@technobuddha/project": "0.99.157",
+    "@types/jsdom": "^27",
+    "@types/react": "19.2.4",
+    "@types/react-dom": "^19",
+    "@vitest/coverage-v8": "4.0.8",
+    "jest-extended": "7.0.0",
+    "jest-matcher-deep-close-to": "3.0.2",
+    "jsdom": "27.2.0",
+    "postcss": "8.5.6",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "typedoc": "0.28.14",
+    "typescript": "5.9.3",
+    "vitest": "4.0.8"
+  },
+  "technobuddhaProject": {
+    "version": "0.99.157",
+    "created": "2025-02-19T12:50:14.916Z"
   }
 }
