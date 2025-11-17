@@ -1,7 +1,6 @@
 import { type Theme } from '@mui/material/styles';
-import { get } from '@technobuddha/library';
+import { fillFunctions, get, toString } from '@technobuddha/library';
 import type * as postcss from 'postcss';
-import reduceFunctionCall from 'reduce-function-call';
 
 /**
  * Configuration options for the PostCSS MUI Theme plugin.
@@ -59,40 +58,32 @@ export const plugin = ({ theme }: Options): postcss.AcceptedPlugin => ({
   // eslint-disable-next-line @typescript-eslint/naming-convention
   Once(root) {
     root.walkDecls((decl) => {
-      for (;;) {
-        const idxTheme = decl.value.indexOf('mui-theme(');
-        const idxSpace = decl.value.indexOf('mui-spacing(');
+      decl.value = fillFunctions(
+        decl.value,
+        ['mui-theme', 'mui-spacing', 'contrastText'],
+        (args, name) => {
+          if (args.length !== 1) {
+            throw new Error(`Expected exactly one argument for ${name}(), but got ${args.length}`);
+          }
+          const [body] = args;
 
-        if (idxTheme === -1 && idxSpace === -1) {
-          break;
-        }
+          switch (name) {
+            case 'mui-theme': {
+              return toString(get(theme, body.replaceAll('-', '.')));
+            }
 
-        if (idxTheme !== -1) {
-          decl.value = reduceFunctionCall(
-            decl.value,
-            'mui-theme',
-            (body) => get(theme, body.replaceAll('-', '.')) as string,
-          );
-        }
+            case 'mui-spacing': {
+              return theme.spacing(Number.parseFloat(body));
+            }
 
-        if (idxSpace !== -1) {
-          decl.value = reduceFunctionCall(decl.value, 'mui-spacing', (body) =>
-            theme.spacing(Number.parseFloat(body)),
-          );
-        }
-      }
+            case 'contrastText': {
+              return theme.palette.getContrastText(body);
+            }
 
-      for (;;) {
-        const idxContrast = decl.value.indexOf('contrastText(');
-
-        if (idxContrast === -1) {
-          break;
-        }
-
-        decl.value = reduceFunctionCall(decl.value, 'contrastText', (body) =>
-          theme.palette.getContrastText(body),
-        );
-      }
+            // no default
+          }
+        },
+      );
     });
   },
 });

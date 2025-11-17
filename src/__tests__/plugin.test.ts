@@ -156,6 +156,50 @@ describe('postcss-mui-theme', () => {
     });
   });
 
+  describe('error handling', () => {
+    test('should throw error when mui-theme() has no arguments', async () => {
+      const input = '.button { background: mui-theme(); }';
+      await expect(processCSS(input)).rejects.toThrow(
+        'Expected exactly one argument for mui-theme(), but got 0',
+      );
+    });
+
+    test('should throw error when mui-theme() has multiple arguments', async () => {
+      const input = '.button { background: mui-theme(palette-primary-main, extra); }';
+      await expect(processCSS(input)).rejects.toThrow(
+        'Expected exactly one argument for mui-theme(), but got 2',
+      );
+    });
+
+    test('should throw error when mui-spacing() has no arguments', async () => {
+      const input = '.button { padding: mui-spacing(); }';
+      await expect(processCSS(input)).rejects.toThrow(
+        'Expected exactly one argument for mui-spacing(), but got 0',
+      );
+    });
+
+    test('should throw error when mui-spacing() has multiple arguments', async () => {
+      const input = '.button { padding: mui-spacing(2, 3); }';
+      await expect(processCSS(input)).rejects.toThrow(
+        'Expected exactly one argument for mui-spacing(), but got 2',
+      );
+    });
+
+    test('should throw error when contrastText() has no arguments', async () => {
+      const input = '.button { color: contrastText(); }';
+      await expect(processCSS(input)).rejects.toThrow(
+        'Expected exactly one argument for contrastText(), but got 0',
+      );
+    });
+
+    test('should throw error when contrastText() has multiple arguments', async () => {
+      const input = '.button { color: contrastText(#ffffff, #000000); }';
+      await expect(processCSS(input)).rejects.toThrow(
+        'Expected exactly one argument for contrastText(), but got 2',
+      );
+    });
+  });
+
   describe('plugin metadata', () => {
     test('should have postcss property set to true', () => {
       expect(plugin.postcss).toBeTrue();
