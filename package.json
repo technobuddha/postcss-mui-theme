@@ -1,6 +1,6 @@
 {
   "name": "postcss-mui-theme",
-  "version": "1.3.14",
+  "version": "1.3.15",
   "description": "Technobuddha application",
   "author": {
     "name": "Phil Hill",
@@ -28,15 +28,11 @@
     "lint": "npx eslint src",
     "test": "vitest run"
   },
-  "dependencies": {
-    "@technobuddha/library": "2.0.111"
-  },
   "devDependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
     "@mui/material": "6.5.0",
-    "@technobuddha/builder": "0.99.28",
-    "@technobuddha/project": "0.99.160",
+    "@technobuddha/project": "0.1.0-45",
     "@types/jsdom": "^27.0.0",
     "@types/react": "19.2.4",
     "@types/react-dom": "^19.2.3",
@@ -52,7 +48,10 @@
     "vitest": "4.0.8"
   },
   "technobuddhaProject": {
-    "version": "0.99.157",
+    "version": "0.1.0-45",
     "created": "2025-02-19T12:50:14.916Z"
+  },
+  "dependencies": {
+    "@technobuddha/library": "2.1.0-26"
   }
 }

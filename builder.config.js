@@ -1,8 +1,8 @@
 //@ts-check
 
-/** @type {import('@technobuddha/builder').Builds} */
+/** @type {import('@technobuddha/project/build').Builds} */
 const config = {
-  dev: {
+  default: {
     watch: true,
     steps: [
       {
@@ -18,26 +18,12 @@ const config = {
   },
   prod: {
     steps: [
-      {
-        name: 'Clean',
-        command: 'rm -rf ./dist',
-      },
-      {
-        name: 'Plugin',
-        command: 'tsc -p ./src',
-      },
+      { build: 'default' },
     ]
   },
   publish: {
     steps: [
-      {
-        name: 'Clean',
-        command: 'rm -rf ./dist',
-      },
-      {
-        name: 'Plugin',
-        command: 'tsc -p ./src',
-      },
+      { build: 'default' },
       {
         name: 'Version',
         command: 'yarn version patch',

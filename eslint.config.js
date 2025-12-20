@@ -4,8 +4,9 @@
 // 🚨
 import { app } from '@technobuddha/project';
 
-/** @type {import('eslint').Linter.Config[]} */
+/** @type import('eslint').Linter.Config[] */
 const config = [
+  { ignores: ['coverage', 'dist'] },
   // .
   app.lint({ files: ['*.config.js'], ignores: [], environment: 'node' }),
   // .
