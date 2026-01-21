@@ -1,7 +1,7 @@
-// @ts-check
 // 🚨
 // 🚨 CHANGES TO THIS FILE WILL BE OVERRIDDEN
 // 🚨
+// @ts-check
 import { app } from '@technobuddha/project';
 
 /** @type import('eslint').Linter.Config[] */

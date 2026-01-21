@@ -26,13 +26,19 @@
     "dev": "build dev",
     "build": "build prod",
     "lint": "npx eslint src",
-    "test": "vitest run"
+    "test": "vitest run",
+    "start": "build default",
+    "publish": "build publish",
+    "test:watch": "npx vitest --typecheck --no-coverage watch",
+    "test:full": "npx vitest --typecheck --mode=full run",
+    "spell": "npx cspell lint src",
+    "preinstall": "git config core.hooksPath git-hooks"
   },
   "devDependencies": {
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
     "@mui/material": "6.5.0",
-    "@technobuddha/project": "0.1.0-45",
+    "@technobuddha/project": "0.1.0-237",
     "@types/jsdom": "^27.0.0",
     "@types/react": "19.2.4",
     "@types/react-dom": "^19.2.3",
@@ -48,7 +54,6 @@
     "vitest": "4.0.8"
   },
   "technobuddhaProject": {
-    "version": "0.1.0-45",
     "created": "2025-02-19T12:50:14.916Z"
   },
   "dependencies": {

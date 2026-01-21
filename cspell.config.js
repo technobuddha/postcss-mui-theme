@@ -122,7 +122,7 @@ const config =
   "patterns": [
     {
       "name": "comment-single-line",
-      "pattern": "/\/\/.*/g"
+      "pattern": "/\\/\\/.*/g"
     },
     {
       "name": "comment-multi-line",
