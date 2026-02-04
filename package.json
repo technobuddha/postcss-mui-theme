@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/technobuddha/postcss-mui-theme#readme",
   "dependencies": {
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.23",
     "reduce-function-call": "^1.0.3"
   },
   "peerDependencies": {
