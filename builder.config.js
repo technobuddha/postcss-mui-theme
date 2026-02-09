@@ -12,7 +12,7 @@ const config = {
       {
         name: 'Plugin',
         directory: './src',
-        command: 'tsc -p ./src',
+        command: 'npx tsc -p ./src',
       },
     ],
   },

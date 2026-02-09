@@ -18,7 +18,7 @@
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "packageManager": "yarn@4.6.0",
+  "packageManager": "yarn@4.12.0",
   "engines": {
     "node": ">=24.0.0"
   },
@@ -38,25 +38,14 @@
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
     "@mui/material": "6.5.0",
-    "@technobuddha/project": "0.1.0-237",
-    "@types/jsdom": "^27.0.0",
+    "@technobuddha/project": "0.1.0-298",
     "@types/react": "19.2.4",
     "@types/react-dom": "^19.2.3",
-    "@vitest/coverage-v8": "4.0.8",
-    "jest-extended": "7.0.0",
-    "jest-matcher-deep-close-to": "3.0.2",
-    "jsdom": "27.2.0",
     "postcss": "8.5.6",
     "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "typedoc": "0.28.14",
-    "typescript": "5.9.3",
-    "vitest": "4.0.8"
+    "react-dom": "19.2.0"
   },
   "technobuddhaProject": {
     "created": "2025-02-19T12:50:14.916Z"
-  },
-  "dependencies": {
-    "@technobuddha/library": "2.1.0-26"
   }
 }
