@@ -69,7 +69,9 @@ export const plugin = ({ theme }: Options): postcss.AcceptedPlugin => ({
 
           switch (name) {
             case 'mui-theme': {
-              return toString(get(theme, body.replaceAll('-', '.')));
+              return toString(
+                get(theme as unknown as Record<string, unknown>, body.replaceAll('-', '.')),
+              );
             }
 
             case 'mui-spacing': {
