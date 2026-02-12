@@ -1,6 +1,0 @@
-#!/bin/sh
-# 🚨
-# 🚨 CHANGES TO THIS FILE WILL BE OVERRIDDEN
-# 🚨
-
-find . -maxdepth 1 -name ".env*" -not -name ".env.keys" -not -name ".env*.local" -exec npx dotenvx encrypt -f {} \;
