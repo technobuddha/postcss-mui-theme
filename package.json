@@ -38,7 +38,7 @@
     "@emotion/react": "11.14.0",
     "@emotion/styled": "11.14.1",
     "@mui/material": "6.5.0",
-    "@technobuddha/project": "0.1.0-355",
+    "@technobuddha/project": "0.1.0-418",
     "@types/react": "19.2.4",
     "@types/react-dom": "^19.2.3",
     "postcss": "8.5.6",
