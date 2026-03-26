@@ -6,6 +6,10 @@ import { app } from '@technobuddha/project';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
-  app.lint({ files: ['*.config.js'], environment: 'node' }),
-  app.lint({ files: ['*.config.ts', '*.setup.ts'], environment: 'node', typescript: true }),
+  app.lint({
+    files: ['**/*.ts'],
+    ignores: ['__tests__/**/*', '@types/**/*'],
+    environment: 'node',
+    typescript: true,
+  }),
 ]);

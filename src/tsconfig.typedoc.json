@@ -10,7 +10,7 @@
     "lib": ["esnext", "dom"],
     "noEmit": true
   },
-  "include": ["**/*.ts", "**/*.d.ts"],
+  "include": ["**/*.ts"],
   "exclude": ["**/__tests__/**/*.*"],
   "references": []
 }

@@ -10,7 +10,7 @@
     "lib": ["esnext"],
     "noEmit": true
   },
-  "include": ["**/*.test.ts", "../**/*.d.ts"],
-  "exclude": [],
+  "include": ["*.test.ts", "../@types/*.d.ts"],
+  "exclude": ["eslint.config.js"],
   "references": [{ "path": ".." }]
 }

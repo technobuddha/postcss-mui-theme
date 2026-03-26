@@ -13,5 +13,5 @@
     "noEmit": true
   },
   "include": ["*.config.js", "*.js", "*.config.ts", "*.setup.ts"],
-  "exclude": []
+  "exclude": ["eslint.config.js"]
 }
