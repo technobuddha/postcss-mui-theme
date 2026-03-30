@@ -3,7 +3,6 @@
 /** @type {import('@technobuddha/project/build').Builds} */
 const config = {
   default: {
-    watch: true,
     steps: [
       {
         name: 'Clean',
@@ -11,15 +10,9 @@ const config = {
       },
       {
         name: 'Plugin',
-        directory: './src',
-        command: 'npx tsc -p ./src',
+        command: 'npx tsc --build src',
       },
     ],
-  },
-  prod: {
-    steps: [
-      { build: 'default' },
-    ]
   },
   publish: {
     steps: [
@@ -30,7 +23,7 @@ const config = {
       },
       {
         name: 'Publish',
-        command: 'yarn npm publish --access public'
+        command: 'yarn npm publish --access=public'
       }
     ]
   }
