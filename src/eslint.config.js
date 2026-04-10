@@ -3,13 +3,10 @@
 // 🚨
 // @ts-check
 import { lint } from '@technobuddha/project';
-import { defineConfig } from 'eslint/config';
 
-export default defineConfig([
-  lint({
-    files: ['**/*.ts'],
-    ignores: ['__tests__/**/*', '@types/**/*'],
-    environment: 'node',
-    typescript: true,
-  }),
-]);
+export default lint({
+  files: ['**/*.ts'],
+  ignores: ['__tests__/**/*', '@types/**/*'],
+  platform: 'node',
+  typescript: true,
+});

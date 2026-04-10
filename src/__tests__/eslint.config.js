@@ -3,8 +3,5 @@
 // 🚨
 // @ts-check
 import { lint } from '@technobuddha/project';
-import { defineConfig } from 'eslint/config';
 
-export default defineConfig([
-  lint({ files: ['**/*.test.ts'], environment: 'test', typescript: true }),
-]);
+export default lint({ files: ['**/*.test.ts'], platform: 'test', typescript: true });
