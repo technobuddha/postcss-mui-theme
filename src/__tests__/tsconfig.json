@@ -6,9 +6,9 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "composite": true,
-    "types": ["node", "vitest/globals"],
     "lib": ["esnext"],
-    "noEmit": true
+    "noEmit": true,
+    "types": ["node", "vitest/globals"]
   },
   "include": ["*.test.ts", "../@types/*.d.ts"],
   "exclude": ["eslint.config.js"],

@@ -20,7 +20,7 @@ export default defineConfig(() => ({
       enabled: true,
     },
     coverage: {
-      reportsDirectory: '../coverage',
+      reportsDirectory: './coverage',
       skipFull: true,
       enabled: true,
       exclude: [
