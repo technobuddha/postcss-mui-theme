@@ -23,13 +23,13 @@ const result = await postcss([muiThemePlugin({ theme })]).process(css);
 ## Sample CSS Input and Output
 
 ```css
-// Input CSS
+/* Input CSS */
 .button {
   background-color: mui-theme(palette-primary-main);
   padding: mui-spacing(2);
   color: contrastText(#ff0000);
 }
-// Output CSS
+/* Output CSS */
 .button {
   background-color: #1976d2;
   padding: 16px;

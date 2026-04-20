@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 8
+  version: 9
   cacheKey: 10c0
 
 "@asamuzakjp/css-color@npm:^5.1.5":
@@ -1877,9 +1877,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@technobuddha/project@npm:1.0.0-8":
-  version: 1.0.0-8
-  resolution: "@technobuddha/project@npm:1.0.0-8"
+"@technobuddha/project@npm:1.0.0-10":
+  version: 1.0.0-10
+  resolution: "@technobuddha/project@npm:1.0.0-10"
   dependencies:
     "@commander-js/extra-typings": "npm:14.0.0"
     "@dotenvx/dotenvx": "npm:1.61.1"
@@ -1952,7 +1952,7 @@ __metadata:
     eslint-comments: dist/eslint-comments/eslint-comments.js
     tb: dist/tb/tb.js
     unexported-files: dist/unexported-files/unexported-files.js
-  checksum: 10c0/70c3577a47e75e602e4aa7d0ecccf8c5de61f63d981f9162815e8f3eb5a0cc8d6a41293655cb8dd7174fceed653150311933b54e9ab7236ce265d02931bf7283
+  checksum: 10c0/fc42c6ffb064d2fb5b0b3170959e39fcaacb0e779da0b6ca0904f04a717340a348632a0062d689e435fab46275101e3a56d47b9cc20b252d5c27e070734e9616
   languageName: node
   linkType: hard
 
@@ -6020,10 +6020,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"merge@npm:^1.2.0":
-  version: 1.2.1
-  resolution: "merge@npm:1.2.1"
-  checksum: 10c0/09f0ed1e85f336feb32d93d1243cb8930be22c7e6e4aa0c59a08a6f680d274dbe021c7d2a35ee8383cab2524efbb3f51985c3052e3dcf134951656511edf4693
+"merge@npm:>=2.1.1":
+  version: 2.1.1
+  resolution: "merge@npm:2.1.1"
+  checksum: 10c0/9e722a88f661fb4d32bfbab37dcc10c2057d3e3ec7bda5325a13cbfb82a59916963ec99374cca7f5bd3ff8c65a6ffbd9e1061bc0c45c6e3bf211c78af659cb44
   languageName: node
   linkType: hard
 
@@ -6587,7 +6587,7 @@ __metadata:
   dependencies:
     "@mui/material": "npm:7.3.10"
     "@technobuddha/library": "npm:2.1.0-111"
-    "@technobuddha/project": "npm:1.0.0-8"
+    "@technobuddha/project": "npm:1.0.0-10"
     "@types/node": "npm:25.6.0"
     "@vitest/coverage-v8": "npm:4.1.4"
     cspell: "npm:10.0.0"

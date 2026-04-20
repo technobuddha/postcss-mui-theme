@@ -30,6 +30,10 @@ if (import.meta.env.MODE === 'full') {
           });
         }
       }
+    }).catch((error) => {
+      if(error?.code !== 'ENOENT') {
+        throw error;
+      }
     });
   });
 }
