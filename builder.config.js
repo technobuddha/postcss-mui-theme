@@ -19,7 +19,7 @@ const config = {
       { build: 'default' },
       {
         name: 'Version',
-        command: 'yarn version patch',
+        command: 'yarn version prerelease',
       },
       {
         name: 'Publish',
