@@ -1,0 +1,25 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
+  "tagDefinitions": [
+    {
+      "tagName": "@type",
+      "syntaxKind": "block"
+    },
+    {
+      "tagName": "@yields",
+      "syntaxKind": "block"
+    },
+    {
+      "tagName": "@document",
+      "syntaxKind": "block"
+    },
+    {
+      "tagName": "@group",
+      "syntaxKind": "block"
+    },
+    {
+      "tagName": "@category",
+      "syntaxKind": "block"
+    }
+  ]
+}
