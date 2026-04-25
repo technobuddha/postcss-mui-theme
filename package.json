@@ -6,8 +6,8 @@
   "stableVersion": "1.3.20",
   "license": "MIT",
   "type": "module",
-  "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "author": {
     "name": "Phil Hill",
     "email": "phil@technobuddha.com"
@@ -30,22 +30,23 @@
     "test:watch": "npx vitest --typecheck --no-coverage watch",
     "test:full": "npx vitest --typecheck --mode=full run",
     "spell": "npx cspell lint src",
-    "preinstall": "git config core.hooksPath git-hooks"
+    "prepare": "npx husky"
   },
   "dependencies": {
-    "@technobuddha/library": "2.1.0-111"
+    "@technobuddha/library": "2.1.0-115"
   },
   "devDependencies": {
     "@mui/material": "7.3.10",
-    "@technobuddha/project": "1.0.0-10",
+    "@technobuddha/project": "1.0.0-32",
     "@types/node": "25.6.0",
-    "@vitest/coverage-v8": "4.1.4",
+    "@vitest/coverage-v8": "4.1.5",
     "cspell": "10.0.0",
+    "husky": "9.1.7",
     "jsdom": "29.0.2",
     "postcss": "8.5.10",
     "tsx": "4.21.0",
     "typescript": "6.0.3",
-    "vitest": "4.1.4"
+    "vitest": "4.1.5"
   },
   "peerDependencies": {
     "@mui/material": "^7.30.10",
