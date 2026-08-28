@@ -1,7 +1,7 @@
 {
   "$schema": "https://json.schemastore.org/package.json",
   "name": "postcss-mui-theme",
-  "version": "2.0.0-5",
+  "version": "2.0.0-6",
   "description": "Technobuddha application",
   "license": "MIT",
   "type": "module",
@@ -33,12 +33,12 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@technobuddha/library": "2.1.0-196"
+    "@technobuddha/library": "2.1.0-197"
   },
   "devDependencies": {
     "@cspell/cspell-types": "10.1.1",
     "@mui/material": "7.3.11",
-    "@technobuddha/project": "1.0.0-203",
+    "@technobuddha/project": "1.0.0-207",
     "@types/node": "26.4.0",
     "@vitest/coverage-v8": "4.1.11",
     "cspell": "10.1.1",
